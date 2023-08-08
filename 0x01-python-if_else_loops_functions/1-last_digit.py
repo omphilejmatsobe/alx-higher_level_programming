@@ -12,7 +12,7 @@ if last > 5:
     string = "and is greater than 5"
 elif last == 0:
     string = "and is 0"
-elif last < 5:
-    string = "and is less than 5"
+elif last < 6:
+    string = "and is less than 6 and not 0"
 
 print("{} {}".format(last, string))
