@@ -15,4 +15,4 @@ elif last == 0:
 elif last < 6:
     string = "and is less than 6 and not 0"
 
-print("{} {}".format(last, string))
+print("Last digit of {} is {} {}".format(number, last, string))
