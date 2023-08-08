@@ -5,6 +5,7 @@ string = ""
 
 if number < 0:
     last = 10 - (number % 10)
+    last = last * (-1)
 elif number >= 0:
     last = number % 10
 
