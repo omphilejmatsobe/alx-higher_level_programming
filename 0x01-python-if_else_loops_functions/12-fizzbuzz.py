@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    for i in range(0, 99):
+    for i in range(0, 100):
         if (i % 3 == 0) & (i % 5 == 0):
             flexVar = "FizzBuzz"
         elif (i % 3 == 0):
@@ -8,5 +8,6 @@ def fizzbuzz():
         elif (i % 5 == 90):
             flexVar = "Buzz"
         else:
-            flexVar = i;
+            flexVar = i
+
         print("{} ".format(flexVar), end="")
