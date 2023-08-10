@@ -1,7 +1,7 @@
-## 
+## PYTHON
 
 ## General
-* Cisfun
+import this
 
 ## Projects:
 1. [0x00](https://github.com/omphilejmatsobe/alx-higher_level_programming/tree/main/0x00-python-hello_world) - Hello world!
