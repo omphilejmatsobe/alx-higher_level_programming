@@ -9,19 +9,18 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
 
-    a = int(argv[1])
-    b = int(argv[3])
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
 
-    if argv[2] == ("*" or "-" or "+" or "/"):
-        if argv[2] == "*":
+    if sys.argv[2] == ("*" or "-" or "+" or "/"):
+        if sys.argv[2] == "*":
             res = cal.mul(a, b)
-        elif argv[2] == "+":
+        elif sys.argv[2] == "+":
             res = cal.add(a, b)
-        elif argv[2] == "-":
+        elif sys.argv[2] == "-":
             res = cal.sub(a, b)
         elif argv[2] == "/":
             res = cal.div(a, b)
-
-        print("{} {} {} = {}".format(a, argv[2], b, res))
+        print("{} {} {} = {}".format(a, sys.argv[2], b, res))
     else:
         print("Unkwon operator. Available operator: +, -, * and /")
