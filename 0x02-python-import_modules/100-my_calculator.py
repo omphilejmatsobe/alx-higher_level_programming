@@ -31,4 +31,5 @@ if __name__ == "__main__":
         print("{} {} {} = {}".format(a, sys.argv[2], b, res))
 
     else:
-        print("Unkwon operator. Available operator: +, -, * and /")
+        print("Unknwon operator. Available operators: +, -, * and /")
+        sys.exit(1)
