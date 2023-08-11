@@ -26,10 +26,8 @@ if __name__ == "__main__":
     elif argv[2] == "/":
         res = div(a, b)
         sn = 1
-
-    if sn == 1:
-        print("{} {} {} = {}".format(a, sys.argv[2], b, res))
-
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
+
+    print("{} {} {} = {}".format(a, sys.argv[2], b, res))
