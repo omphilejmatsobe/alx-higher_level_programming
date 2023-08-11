@@ -12,17 +12,23 @@ if __name__ == "__main__":
     a = int(sys.argv[1])
     b = int(sys.argv[3])
 
-    sn = sys.argv[2]
+    sn = 0
 
-    if sn == "*" or sn == "-" or sn == "+" or sn =="/"):
-        if sys.argv[2] == "*":
-            res = cal.mul(a, b)
-        elif sys.argv[2] == "+":
-            res = cal.add(a, b)
-        elif sys.argv[2] == "-":
-            res = cal.sub(a, b)
-        elif argv[2] == "/":
-            res = cal.div(a, b)
+    if sys.argv[2] == "*":
+        res = cal.mul(a, b)
+        sn = 1
+    elif sys.argv[2] == "+":
+        res = cal.add(a, b)
+        sn = 1
+    elif sys.argv[2] == "-":
+        res = cal.sub(a, b)
+        sn = 1
+    elif argv[2] == "/":
+        res = cal.div(a, b)
+        sn = 1
+
+    if sn == 1:
         print("{} {} {} = {}".format(a, sys.argv[2], b, res))
+
     else:
         print("Unkwon operator. Available operator: +, -, * and /")
