@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 def magic_calculation(a, b):
     calc = 0
     for i in range(1, 3):
@@ -7,7 +9,7 @@ def magic_calculation(a, b):
                 raise Exception('Too Far')
             else:
                 calc += a ** b / i
-        except:
+        except (TypeError, ValueError):
             calc = b + a
             break
     return (calc)
