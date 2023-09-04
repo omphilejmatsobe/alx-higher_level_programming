@@ -5,7 +5,10 @@ Class rectangle
 
 
 class Rectangle:
-    """Rectangle Class With attributes width and height"""
+    """A Rectangle class with attributes width and height,
+    methods Area, perimeter, print, str, repr, and del, and
+    class attribute number_of_instances, class attribute print_symbol,
+    static method bigger_or_equal, and class method square."""
 
     number_of_instances = 0
     print_symbol = "#"
@@ -14,6 +17,10 @@ class Rectangle:
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
+
+    @classmethod
+    def square(cls, size=0):
+        return Rectangle(size, size)
 
     @property
     def height(self):
@@ -50,10 +57,6 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return (rect_1)
         return (rect_2)
-
-    @classmethod
-    def square(cls, size=0):
-        return (cls(size, size)
 
     def area(self):
         return (self.__width * self.__height)
