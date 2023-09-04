@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+Class rectangle
+"""
+
+
 class Rectangle:
 
     def __init__(self, width=0, height=0):
