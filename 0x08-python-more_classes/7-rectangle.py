@@ -8,7 +8,8 @@ class Rectangle:
     """Rectangle Class With attributes width and height"""
     
     number_of_instances = 0
-    
+    print_symbol = "#" 
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -48,9 +49,16 @@ class Rectangle:
         return ((self.__width + self.__height) * 2)
 
     def __str__(self):
-
-        if self.__width == 0 or self.__height == 0:
-            return ("")
+        r = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                try:
+                    r += str(self.print_symbol)
+                except Exception:
+                    r += type(self).print_symbol
+            if i is not self.__height - 1:
+                r += "\n"
+        return r
 
         rectangle = []
         for i in range(self.__height):
@@ -65,3 +73,5 @@ class Rectangle:
     def __del__(self):
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
+
