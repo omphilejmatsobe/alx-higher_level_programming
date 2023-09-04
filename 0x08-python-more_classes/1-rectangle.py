@@ -5,15 +5,13 @@ Class rectangle
 
 
 class Rectangle:
-
+    """Rectangle Class With attributes width and height"""
     def __init__(self, width=0, height=0):
-
         self.width = width
         self.height = height
 
     @property
     def height(self):
-
         return self.__height
 
     @height.setter
@@ -31,7 +29,6 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
