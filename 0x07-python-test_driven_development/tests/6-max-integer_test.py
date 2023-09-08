@@ -9,7 +9,7 @@ class TestMaxInteger(unittest.TestCase):
     """
 
     def test_sorted_list(self):
-       sorted_list = [1, 2, 3, 4]
+       _list = [1, 2, 3, 4]
        self.assertEqual(max_integer(sorted_list), 4)
 
     def test_unsorted_list(self):
@@ -33,18 +33,18 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(only_one), 7)
 
     def test_max_first(self):
-        max_first = [4, 1, 2, 3]
+        _first = [4, 1, 2, 3]
         self.assertEqual(max_integer(max_first), 4)
 
     def test_max_middle(self):
-        max_middle = [1, 2, 4, 3]
+        _middle = [1, 2, 4, 3]
         self.assertEqual(max_integer(max_middle), 4)
 
     def test_non_string(self):
         self.assertEqual(max_integer(""), None)
 
     def test_many_strings(self):
-        many_strings = ["string1", "string2", "string3"]
+        _strings = ["string1", "string2", "string3"]
         self.assertEqual(max_integer(many_strings), "string3")
 
 if __name__ == '__main__':
