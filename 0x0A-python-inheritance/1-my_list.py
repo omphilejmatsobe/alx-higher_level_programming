@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+
+"""
+=============================
+Module with the method MyList
+=============================
+"""
+
 class MyList(list):
         """function inherits methods from list
     Arguments:
