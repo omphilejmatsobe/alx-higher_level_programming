@@ -1,9 +1,16 @@
 #!/usr/bin/python3
 
+import sys
 
-import json
 
+if __name__ == "__main__":
+    save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
+    load_from_json_file = \
+        __import__('8-load_from_json_file').load_from_json_file
+    try:
+        item = load_from_json_file('add_item.json')
+    except FileNotFoundError:
 
-def save_to_json_file(my_obj, filename):
-    with open(filename, "w") as fn:
-        json.dump(my_obj, fn)
+        arr = []
+    arr.extend(sys.argv[1:])
+    save_to_json_file(arr, "add_item.json")

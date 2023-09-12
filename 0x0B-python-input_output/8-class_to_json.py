@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
 
-import json
+def class_to_json(obj):
+    """add class to json file
+    arguments:
+        param1:obj
+    return: class
+    """
 
-
-def load_from_json_file(filename):
-    with open(filename) as fn:
-        return json.load(fn)
+    return obj.__dict__
