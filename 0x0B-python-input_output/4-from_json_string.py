@@ -1,10 +1,5 @@
 #!/usr/bin/python3
 
-"""
-=================================
-Module with the method read_lines
-=================================
-"""
 
 import json
 
