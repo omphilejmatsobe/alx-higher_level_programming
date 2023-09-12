@@ -14,6 +14,7 @@ def number_of_lines(filename=""):
     Return: number of characters written"""
 
     i = 0
+
     with open(filename) as fn:
         for line in fn:
             i += 1
