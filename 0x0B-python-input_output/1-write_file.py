@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 """
-====================================
-module of the method number_of_lines
-====================================
+===============================
+module of the method write_file
+===============================
 """
 
 
@@ -14,9 +14,5 @@ def write_file(filename="", text=""):
         param2: text
     Return: number of characters written"""
 
-
-    i = 0
-    with open(filename) as fn:
-        for line in fn:
-            i += 1
-        return i
+    with open(filename, 'w', encoding="UTF-8") as f:
+        return f.write(text)
