@@ -7,6 +7,7 @@ Module with the method read_file
 ================================
 """
 
+
 def read_file(filename=""):
 
     """Reads a text file UTF and prints to stdout

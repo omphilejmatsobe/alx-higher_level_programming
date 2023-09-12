@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 """
 ======================================
 Module with the method number_of_lines
@@ -12,6 +13,7 @@ def number_of_lines(filename=""):
     Arguments:
         param1: filename
     Return: number of characters written"""
+
 
     i = 0
 
