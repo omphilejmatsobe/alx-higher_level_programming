@@ -1,7 +1,21 @@
 #!/usr/bin/python3
 
 
+"""
+=================================
+Module with the method read_lines
+=================================
+"""
+
+
 def read_lines(filename="", nb_lines=0):
+    """appends a string at the end of a text file and returns the number of characters added
+    Arguments:
+        param1: filame
+        param2: nb_lines
+    Return: i"""
+
+
     with open(filename, encoding="UTF-8") as f:
         if nb_lines <= 0:
             print(f.read(), end="")
