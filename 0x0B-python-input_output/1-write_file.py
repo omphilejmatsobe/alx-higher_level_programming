@@ -7,7 +7,7 @@ module of the method number_of_lines
 """
 
 
-def number_of_lines(filename=""):
+def number_of_lines(filename="", text=""):
     """Writes a string to a text file and returns the number of characters written
     Arguments:
         param1: filename
@@ -15,7 +15,6 @@ def number_of_lines(filename=""):
 
 
     i = 0
-
     with open(filename) as fn:
         for line in fn:
             i += 1
