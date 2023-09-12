@@ -13,8 +13,7 @@ def read_lines(filename="", nb_lines=0):
     Arguments:
         param1: filame
         param2: nb_lines
-    Return: i"""
-
+    Return: number of characters added"""
 
     with open(filename, encoding="UTF-8") as f:
         if nb_lines <= 0:

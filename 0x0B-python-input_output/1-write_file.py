@@ -11,8 +11,7 @@ def number_of_lines(filename=""):
     """Writes a string to a text file and returns the number of characters written
     Arguments:
         param1: filename
-    Return: i"""
-
+    Return: number of characters written"""
 
     i = 0
     with open(filename) as fn:
