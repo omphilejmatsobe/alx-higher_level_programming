@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+========================
+Module with class Square
+========================
+"""
+
 
 Rectangle = __import__('9-rectangle').Rectangle
 
@@ -12,6 +18,5 @@ class Square(Rectangle):
         self.__size = size
 
     def __str__(self):
-
         _str = "[Square] " + str(self.__size) + "/" + str(self.__size)
         return _str
