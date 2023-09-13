@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""
+==============================
+Module with class of Rectangle
+==============================
+"""
+
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     """Rectangle class that  inherits BaseGeometry"""
@@ -13,7 +20,9 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         return self.__width * self.__height
+
     def __str__(self):
 
         _str = "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
+
         return _str
