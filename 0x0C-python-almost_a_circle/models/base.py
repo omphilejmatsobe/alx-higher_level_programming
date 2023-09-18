@@ -45,5 +45,5 @@ class Base:
 
         if list_objs is not None:
             list_objs = [o.to_dictionary() for o in list_objs]
-        with open("{}.json".format(cls.__name__), "w", encoding="utf-8") as file:
-            file.write(cls.to_json_string(list_objs))
+        with open("{}.json".format(cls.__name__), "w", encoding="utf-8") as J:
+            J.write(cls.to_json_string(list_objs))
