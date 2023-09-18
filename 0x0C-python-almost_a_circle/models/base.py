@@ -17,7 +17,6 @@ class Base:
         constructor init
         """
 
-
         if id is not None:
             self.id = id
         else:
