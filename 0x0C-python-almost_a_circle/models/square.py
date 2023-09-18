@@ -33,13 +33,52 @@ class Square(Rectangle):
 
     @property
     def size(self):
-        """size function"""
+        """
+        size function
+        """
 
         return self.width
 
     @size.setter
     def size(self, value):
-        """size setter"""
+        """
+        size setter
+        """
 
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """
+        update function to update
+        """
+
+        if args and len(args) != 0:
+            i = 0
+            for arg in args:
+                if i == 0:
+                    if arg is None:
+                        self.__init__(self.size, self.x, self.y)
+                    else:
+                        self.id = arg
+                elif i == 1:
+                    self.size = arg
+                elif i == 2:
+                    self.x = arg
+                elif i == 3:
+                    self.y = arg
+                i += 1
+
+        elif kwargs and len(kwargs) != 0:
+            for u, v in kwargs.items():
+                if u == "id":
+                    if v is None:
+                        self.__init__(self.size, self.x, self.y)
+                    else:
+                        self.id = v
+                elif u == "size":
+                    self.size = v
+                elif u == "x":
+                    self.x = v
+                elif u == "y":
+                    self.y = v
