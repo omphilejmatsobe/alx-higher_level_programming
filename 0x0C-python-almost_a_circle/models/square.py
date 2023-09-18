@@ -11,7 +11,7 @@ module with square class
 from models.rectangle import Rectangle
 
 
-class Square:
+class Square(Rectangle):
     """
     the square class
     """
