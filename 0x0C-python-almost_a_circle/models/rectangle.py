@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 """
 ===========================
 Module of Rectangle
@@ -9,8 +10,9 @@ Module of Rectangle
 
 from models.base import Base
 
+
 class Rectangle(Base):
-    """class Rectangle of Rectangle and inherits 
+    """class Rectangle of Rectangle and inherits
     from Base
     """
 
@@ -35,8 +37,9 @@ class Rectangle(Base):
     def width(self, value):
         """width setter"""
 
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("width must be an integer")
+
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width__ = value
@@ -51,8 +54,9 @@ class Rectangle(Base):
     def height(self, value):
         """height setter"""
 
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("height must be an integer")
+
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height__ = value
@@ -67,7 +71,7 @@ class Rectangle(Base):
     def x(self, value):
         """x setter"""
 
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
@@ -83,7 +87,7 @@ class Rectangle(Base):
     def y(self, value):
         """y setter"""
 
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
@@ -95,3 +99,12 @@ class Rectangle(Base):
         """
 
         return self.width * self.height
+
+    def display(self):
+        """
+        display function, to print a rectangle
+        """
+
+        t = '\n' * self.y + \
+            (' ' * self.x + '#' * self.width + '\n') * self.height
+        print(t, end='')
