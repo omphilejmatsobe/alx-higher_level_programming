@@ -21,11 +21,11 @@ class Rectangle(Base):
         init constructor
         """
 
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
-        super().__init__(id)
 
     @property
     def width(self):
@@ -156,3 +156,9 @@ class Rectangle(Base):
                     self.x = z
                 elif u == "y":
                     self.y = z
+
+    def to_dictionary(self):
+        '''Returns dictionary representation rectangle'''
+
+        return {"id": self.id, "width": self.__width, "height": self.__height,
+                "x": self.__x, "y": self.__y}
