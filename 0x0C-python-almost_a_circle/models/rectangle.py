@@ -105,6 +105,16 @@ class Rectangle(Base):
         display function, to print a rectangle
         """
 
-        t = '\n' * self.y + \
+        r = '\n' * self.y + \
             (' ' * self.x + '#' * self.width + '\n') * self.height
-        print(t, end='')
+        print(r, end='')
+
+    def __str__(self):
+        """
+        Returns string info about this rectangle
+        """
+
+        return '[{}] ({}) {}/{} - {}/{}'.\
+            format(type(self).__name__, self.id, self.x, self.y, self.width,
+                   self.height)
+
