@@ -31,7 +31,7 @@ class Rectangle(Base):
     def width(self):
         """private width function"""
 
-        return self.__width__
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -42,13 +42,13 @@ class Rectangle(Base):
 
         if value <= 0:
             raise ValueError("width must be > 0")
-        self.__width__ = value
+        self.__width = value
 
     @property
     def height(self):
         """private height function"""
 
-        return self.__height__
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -59,13 +59,13 @@ class Rectangle(Base):
 
         if value <= 0:
             raise ValueError("height must be > 0")
-        self.__height__ = value
+        self.__height = value
 
     @property
     def x(self):
         """private x function"""
 
-        return self.__x__
+        return self.__x
 
     @x.setter
     def x(self, value):
@@ -75,13 +75,13 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
-        self.__x__ = value
+        self.__x = value
 
     @property
     def y(self):
         """private y function"""
 
-        return self.__y__
+        return self.__y
 
     @y.setter
     def y(self, value):
@@ -91,7 +91,7 @@ class Rectangle(Base):
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
-        self.__y__ = value
+        self.__y = value
 
     def area(self):
         """
