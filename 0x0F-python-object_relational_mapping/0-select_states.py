@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-# Usage: ./0-select_states.py <mysql username> \
-#                             <mysql password> \
-#                             <database name>
-
+"""
+module for the select_state class
+"""
 
 import sys
 import MySQLdb
