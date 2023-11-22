@@ -9,7 +9,7 @@ import MySQLdb
 
 if __name__ == "__main__":
     """Class to select state"""
-    data = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], data=sys.argv[3])
-    c = data.cursor()
+    d = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], d = sys.argv[3])
+    c = d.cursor()
     c.execute("SELECT * FROM `states`")
     [print(state) for state in c.fetchall()]
