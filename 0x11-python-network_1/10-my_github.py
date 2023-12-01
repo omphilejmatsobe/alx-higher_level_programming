@@ -18,5 +18,5 @@ if __name__ == "__main__":
     req = requests.get(url, auth=(usr, passwrd))
     try:
         print(req.json().get('id'))
-    except:
+    except Exception:
         pass
