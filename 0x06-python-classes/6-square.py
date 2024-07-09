@@ -52,3 +52,5 @@ class Square:
                         print("#", end="")
                     else:
                         print("#")
+
+
