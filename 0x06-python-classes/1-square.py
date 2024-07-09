@@ -14,4 +14,4 @@ class Square:
         Method to initialize instance attributes
         """
 
-        self.size = size
+        self.__size = size
